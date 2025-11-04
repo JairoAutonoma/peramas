@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peramás Asesores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="intro-overlay-container">
+        <div class="intro-background">
+            <img src="edificio.jpg" alt="intro" class="img-cover">
+        </div>
+        <div class="intro-dark-overlay"></div>
+        <div class="intro-bottom-gradient"></div>
+        <div class="logo-container">
+            <div class="content-wrapper">
+                <figure class="intro-logo">
+                    <img src="peramas-removebg-preview.png" alt="">
+                </figure>
+            </div>
+        </div>
+        <div class="border-animation-container">
+            <div class="animated-border">
+                <div class="border-vertical-left"></div>
+                <div class="border-top"></div>
+                <div class="border-vertical-right"></div>
+
+                <div class="content-wrapper">
+                    <div class="line-left"></div>
+                    <div class="line-right"></div>
+                    <div class="text-decoration-container">
+                        <div class="icon-wrapper left">
+                            <figure>
+                                <img src="intro-left.svg" alt="">
+                            </figure>
+                        </div>
+                        <div class="icon-wrapper right">
+                            <figure>
+                                <img src="intro-right.svg" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Header -->
+    <header id="header" class="absolute top-0 left-0 w-full z-50 py-4">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-4">
+                    <div class="logo">
+                        <img src="peramas-removebg-preview.png" alt="Logo" class="w-28 lg:w-32 h-auto filter brightness-0 invert">
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex flex-col items-end space-y-2">
+                    <!-- Social Icons - ARRIBA -->
+                    <div class="social flex items-center space-x-3">
+                        <a href="#" class="text-white text-xs hover:text-blue-300 transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white text-xs hover:text-blue-300 transition-colors">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="text-white text-xs hover:text-blue-300 transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <!-- Navigation - ABAJO -->
+                    <nav>
+                        <ul class="flex items-center space-x-8">
+                            <li>
+                                <a href="#inicio" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#nosotros" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#areas" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Áreas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#directorio" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Directorio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#noticias" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Noticias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contacto" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 text-white">
+                    <span class="hamburger-line block w-6 h-0.5 bg-white transition-all"></span>
+                    <span class="hamburger-line block w-6 h-0.5 bg-white transition-all"></span>
+                    <span class="hamburger-line block w-6 h-0.5 bg-white transition-all"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu lg:hidden fixed top-0 left-0 w-full h-0 bg-black bg-opacity-95 overflow-hidden transition-all duration-300">
+                <div class="container mx-auto px-4 pt-20 pb-8">
+                    <button id="close-mobile-menu" class="absolute top-6 right-4 text-white text-2xl">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    
+                    <!-- Mobile Social Icons - ARRIBA -->
+                    <div class="social flex justify-center space-x-6 mb-8">
+                        <a href="#" class="text-white text-lg hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="text-white text-lg hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Navigation - ABAJO -->
+                    <nav class="text-center">
+                        <ul class="space-y-6">
+                            <li>
+                                <a href="#inicio" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#nosotros" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#areas" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Áreas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#sedes" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Directorio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#noticias" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Noticias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contacto" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-right-overlay"></div>
+        <div class="hero-slider">
+            <div class="slide slide-1 active"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+        </div>
+        <div class="hero-navigation">
+            <div class="nav-progress">
+                <div class="progress-item active" data-slide="0"></div>
+                <div class="progress-item" data-slide="1"></div>
+                <div class="progress-item" data-slide="2"></div>
+            </div>
+        </div>
+        <div class="banner-end">
+            <a href="#" class="btn"><span>NOSOTROS</span></a>
+        </div>
+    </section>
+
+    <!-- Sección Áreas de Práctica -->
+    <section class="areas" id="areas">
+        <div class="container">
+            <h2 class="section-title">Nuestras Áreas de Práctica</h2>
+            <p class="section-subtitle">Ofrecemos servicios legales especializados en todas las áreas del derecho, brindando soluciones integrales y personalizadas.</p>
+            
+            <div class="areas-grid">
+                <!-- Card 1 -->
+                <div class="area-card" data-url="derecho-constitucional.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Derecho Constitucional</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Protección de derechos fundamentales, control de constitucionalidad y defensa de garantías constitucionales.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="area-card" data-url="derecho-comercial.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Derecho Comercial y Gobierno Corporativo</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Asesoría en constitución de empresas, fusiones, adquisiciones y gobierno corporativo.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="area-card" data-url="gestion-publica.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Gestión Pública</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Asesoramiento a entidades públicas y privadas en relación con la administración estatal.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="area-card" data-url="derecho-internacional.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Derecho Internacional</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Tratados internacionales, derecho consular y relaciones internacionales entre Estados.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="area-card" data-url="propiedad-intelectual.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Propiedad Intelectual</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Protección de marcas, patentes, derechos de autor y secretos comerciales.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="area-card" data-url="negociacion-internacional.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Facilitador de Negociación Internacional</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Mediación en negociaciones internacionales y servicios de traducción legal.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="area-card" data-url="inmobiliario-urbanismo.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h3>Inmobiliario y Urbanismo</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Asesoría legal en transacciones inmobiliarias, planificación urbana y derecho de propiedad.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="area-card" data-url="procesos-judiciales.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Procesos Judiciales</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Representación legal especializada en todas las instancias judiciales y procedimientos legales.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="area-card" data-url="procesos-penales.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Procesos Judiciales Penales</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Defensa en procesos penales, asesoría a víctimas y garantías procesales.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="area-card" data-url="proceso-civil.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-balance-scale-right"></i>
+                        </div>
+                        <h3>Proceso Judicial Civil</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Litigios civiles, reclamaciones de daños y perjuicios y derecho de obligaciones.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="area-card" data-url="proceso-administrativo.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>Proceso Judicial Contencioso Administrativo</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Impugnación de actos administrativos y defensa frente a la administración pública.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="area-card" data-url="proceso-comercial.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Proceso Judicial Comercial</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Litigios mercantiles, quiebras y concursos de acreedores.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 13 -->
+                <div class="area-card" data-url="derecho-empresarial.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Derecho Empresarial y Arbitrajes</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Resolución alternativa de conflictos y asesoría legal empresarial integral.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 14 -->
+                <div class="area-card" data-url="derecho-laboral.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>Derecho Laboral</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Contratos de trabajo, despidos, negociación colectiva y seguridad social.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 15 -->
+                <div class="area-card" data-url="contrataciones-estado.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Contrataciones con el Estado</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Asesoría en licitaciones públicas, contratos administrativos y procedimientos de selección.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón Ver Más Especialidades -->
+            <div class="show-more-container">
+                <a class="btn" id="showMoreBtn"><span>Ver</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner con Efecto Parallax -->
+    <section class="parallax-banner" id="parallax-banner">
+        <div class="parallax-image" id="parallax-image"></div>
+        <div class="parallax-overlay">
+            <div class="parallax-content" id="parallax-content">
+                <h2>Más de 5 Años de Excelencia Legal</h2>
+                <p>Nuestro compromiso con la calidad y la innovación nos ha posicionado como líderes en el sector legal, brindando soluciones efectivas y personalizadas para cada cliente.</p>
+                <a href="#contacto" class="btn-parallax" id="btn-parallax">Conoce Nuestra Historia</a>
+                
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span>
+                        <div class="stat-label">Casos Exitosos</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <div class="stat-label">Abogados Especializados</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="98">0</span>
+                        <div class="stat-label">% de Satisfacción</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-arrow"><i class="fas fa-chevron-down"></i></span>
+            Desplázate para ver el efecto
+        </div>
+    </section>
+
+    <!-- Sección Socios -->
+    <section class="socios" id="socios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Socios</h2>
+            <p class="section-subtitle">Conoce a nuestro equipo de socios fundadores, profesionales con amplia experiencia y trayectoria en el sector legal.</p>
+            
+            <!-- Socios principales (siempre visibles) -->
+            <div class="socios-grid">
+                <!-- Socio 1 -->
+                <div class="socio-card">
+                    <div class="socio-image" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
+                        <div class="socio-overlay">
+                            <div class="socio-contact">
+                                <a href="#" class="contact-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Email">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Teléfono">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socio-content">
+                        <h3 class="socio-name">Dr. Roberto Mendoza</h3>
+                        <div class="socio-title">Socio Fundador</div>
+                        <p class="socio-specialty">Especialista en Derecho Corporativo y Fusiones & Adquisiciones</p>
+                        <div class="socio-experience">
+                            <div class="experience-item">
+                                <span class="experience-number">25</span>
+                                <span class="experience-label">Años</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">500+</span>
+                                <span class="experience-label">Casos</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">98%</span>
+                                <span class="experience-label">Éxito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Socio 2 -->
+                <div class="socio-card">
+                    <div class="socio-image" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
+                        <div class="socio-overlay">
+                            <div class="socio-contact">
+                                <a href="#" class="contact-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Email">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Teléfono">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socio-content">
+                        <h3 class="socio-name">Dra. Elena Vargas</h3>
+                        <div class="socio-title">Socia Fundadora</div>
+                        <p class="socio-specialty">Especialista en Derecho Inmobiliario y Propiedad Intelectual</p>
+                        <div class="socio-experience">
+                            <div class="experience-item">
+                                <span class="experience-number">22</span>
+                                <span class="experience-label">Años</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">350+</span>
+                                <span class="experience-label">Casos</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">96%</span>
+                                <span class="experience-label">Éxito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Socio 3 -->
+                <div class="socio-card">
+                    <div class="socio-image" style="background-image: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
+                        <div class="socio-overlay">
+                            <div class="socio-contact">
+                                <a href="#" class="contact-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Email">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Teléfono">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socio-content">
+                        <h3 class="socio-name">Dr. Carlos Rodríguez</h3>
+                        <div class="socio-title">Socio Fundador</div>
+                        <p class="socio-specialty">Especialista en Litigios y Derecho Laboral</p>
+                        <div class="socio-experience">
+                            <div class="experience-item">
+                                <span class="experience-number">20</span>
+                                <span class="experience-label">Años</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">400+</span>
+                                <span class="experience-label">Casos</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">95%</span>
+                                <span class="experience-label">Éxito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Socios adicionales (ocultos inicialmente) -->
+            <div class="socios-adicionales" id="sociosAdicionales">
+                <!-- Socio 4 -->
+                <div class="socio-card">
+                    <div class="socio-image" style="background-image: url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
+                        <div class="socio-overlay">
+                            <div class="socio-contact">
+                                <a href="#" class="contact-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Email">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Teléfono">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socio-content">
+                        <h3 class="socio-name">Dra. María González</h3>
+                        <div class="socio-title">Socia Senior</div>
+                        <p class="socio-specialty">Especialista en Derecho de Familia y Sucesiones</p>
+                        <div class="socio-experience">
+                            <div class="experience-item">
+                                <span class="experience-number">18</span>
+                                <span class="experience-label">Años</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">280+</span>
+                                <span class="experience-label">Casos</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">94%</span>
+                                <span class="experience-label">Éxito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Socio 5 -->
+                <div class="socio-card">
+                    <div class="socio-image" style="background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
+                        <div class="socio-overlay">
+                            <div class="socio-contact">
+                                <a href="#" class="contact-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Email">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Teléfono">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socio-content">
+                        <h3 class="socio-name">Dr. Javier López</h3>
+                        <div class="socio-title">Socio Senior</div>
+                        <p class="socio-specialty">Especialista en Derecho Tributario y Financiero</p>
+                        <div class="socio-experience">
+                            <div class="experience-item">
+                                <span class="experience-number">16</span>
+                                <span class="experience-label">Años</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">320+</span>
+                                <span class="experience-label">Casos</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">93%</span>
+                                <span class="experience-label">Éxito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Socio 6 -->
+                <div class="socio-card">
+                    <div class="socio-image" style="background-image: url('https://images.unsplash.com/photo-1551836026-d5c8c2d22052?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
+                        <div class="socio-overlay">
+                            <div class="socio-contact">
+                                <a href="#" class="contact-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Email">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <a href="#" class="contact-link" aria-label="Teléfono">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socio-content">
+                        <h3 class="socio-name">Dra. Ana Martínez</h3>
+                        <div class="socio-title">Socia Senior</div>
+                        <p class="socio-specialty">Especialista en Derecho Internacional y Comercio Exterior</p>
+                        <div class="socio-experience">
+                            <div class="experience-item">
+                                <span class="experience-number">15</span>
+                                <span class="experience-label">Años</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">250+</span>
+                                <span class="experience-label">Casos</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">92%</span>
+                                <span class="experience-label">Éxito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Botón Ver Más Socios -->
+            <div class="socios-btn">
+                <button class="btn-socios" id="btnVerMasSocios">
+                    Ver Más Socios <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Sección Noticias -->
+    <section class="noticias" id="noticias">
+        <div class="container">
+            <h2 class="section-title">Últimas Noticias</h2>
+            <p class="section-subtitle">Mantente informado sobre las últimas novedades legales, casos de éxito y actualizaciones de nuestro bufete.</p>
+            
+            <div class="noticias-grid">
+                <!-- Noticia 1 -->
+                <div class="noticia-card">
+                    <div class="noticia-image" style="background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
+                        <div class="noticia-badge">Novedad</div>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-meta">
+                            <div class="noticia-date">
+                                <i class="far fa-calendar"></i>
+                                <span>15 de Octubre, 2025</span>
+                            </div>
+                            <div class="noticia-category">
+                                <i class="far fa-folder"></i>
+                                <span>Derecho Corporativo</span>
+                            </div>
+                        </div>
+                        <h3>Nuevas Reformas Legales en Derecho Corporativo para 2024</h3>
+                        <p class="noticia-excerpt">
+                            Analizamos las implicaciones de las recientes reformas legales para las empresas y cómo adaptarse a los nuevos requerimientos regulatorios.
+                        </p>
+                        <a href="#" class="noticia-link">
+                            Leer más <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Noticia 2 -->
+                <div class="noticia-card">
+                    <div class="noticia-image" style="background-image: url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')">
+                        <div class="noticia-badge">Reconocimiento</div>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-meta">
+                            <div class="noticia-date">
+                                <i class="far fa-calendar"></i>
+                                <span>8 de Octubre, 2025</span>
+                            </div>
+                            <div class="noticia-category">
+                                <i class="far fa-folder"></i>
+                                <span>Premios</span>
+                            </div>
+                        </div>
+                        <h3>Bufete Legal Gana Premio a la Excelencia Jurídica 2023</h3>
+                        <p class="noticia-excerpt">
+                            Reconocidos por nuestro compromiso con la calidad y la innovación en servicios legales. Un logro que refleja nuestra dedicación.
+                        </p>
+                        <a href="#" class="noticia-link">
+                            Leer más <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Noticia 3 -->
+                <div class="noticia-card">
+                    <div class="noticia-image" style="background-image: url('https://cdn.pixabay.com/photo/2024/04/06/17/41/ai-generated-8679714_1280.jpg')">
+                        <div class="noticia-badge">Evento</div>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-meta">
+                            <div class="noticia-date">
+                                <i class="far fa-calendar"></i>
+                                <span>1 de Octubre, 2025</span>
+                            </div>
+                            <div class="noticia-category">
+                                <i class="far fa-folder"></i>
+                                <span>Webinar</span>
+                            </div>
+                        </div>
+                        <h3>Webinar Gratuito: Protección de Datos en la Era Digital</h3>
+                        <p class="noticia-excerpt">
+                            Nuestros expertos analizan las mejores prácticas para cumplir con las normativas de protección de datos y evitar sanciones.
+                        </p>
+                        <a href="#" class="noticia-link">
+                            Leer más <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="noticias-btn">
+                <a href="#" class="btn-noticias">Ver Todas las Noticias</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Columna 1 - Información -->
+                <div class="footer-column footer-info">
+                    <h3>Peramás Asesores</h3>
+                    <p>
+                        Más de 30 años brindando soluciones legales integrales y personalizadas. 
+                        Nuestro compromiso con la excelencia y la innovación nos posiciona como 
+                        líderes en el sector legal.
+                    </p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Rivera Navarrete 395 - Ofic. 604 -Edificio Tower - San Isidro</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(01) 7691340</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>administracion@peramasasesores.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna 2 - Enlaces rápidos -->
+                <div class="footer-column footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#areas">Áreas de Práctica</a></li>
+                        <li><a href="#sedes">Nuestras Sedes</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#equipo">Nuestro Equipo</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3 - Áreas de práctica -->
+                <div class="footer-column practice-areas">
+                    <h3>Áreas de Práctica</h3>
+                    <ul>
+                        <li><a href="#">Derecho Corporativo</a></li>
+                        <li><a href="#">Derecho Inmobiliario</a></li>
+                        <li><a href="#">Derecho de Familia</a></li>
+                        <li><a href="#">Derecho Laboral</a></li>
+                        <li><a href="#">Propiedad Intelectual</a></li>
+                        <li><a href="#">Litigios y Arbitraje</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 4 - Boletín informativo -->
+                <div class="footer-column newsletter">
+                    <h3>Boletín Informativo</h3>
+                    <p>Suscríbete para recibir las últimas novedades legales y actualizaciones de nuestro bufete.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="newsletter-btn">Suscribirse</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer inferior -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        &copy; 2025 PERAMÁS ASESORES. Todos los derechos reservados.
+                    </div>
+                    <div class="legal-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos de Servicio</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Botón Volver Arriba -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script>
+        //Loader
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                const intro = document.querySelector(".intro-overlay-container");
+                intro.style.opacity = "0";
+                intro.style.transition = "opacity .6s ease";
+                setTimeout(() => intro.style.display = "none", 600);
+            }, 2000);
+        });
+
+        // Slider del Hero con efecto fade
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const progressItems = document.querySelectorAll('.progress-item');
+            let currentSlide = 0;
+            let slideInterval;
+            
+            function showSlide(n) {
+                // Remover clase active de todos los slides y progress items
+                slides.forEach(slide => slide.classList.remove('active'));
+                progressItems.forEach(item => {
+                    item.classList.remove('active');
+                    item.style.animation = 'none';
+                });
+                
+                currentSlide = (n + slides.length) % slides.length;
+                
+                // Aplicar clase active al slide actual
+                slides[currentSlide].classList.add('active');
+                progressItems[currentSlide].classList.add('active');
+                
+                // Reiniciar animación
+                setTimeout(() => {
+                    progressItems[currentSlide].style.animation = 'progress 5s linear forwards';
+                }, 10);
+            }
+            
+            // Navegación por progress items
+            progressItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    clearInterval(slideInterval);
+                    showSlide(index);
+                    startSlideInterval();
+                });
+            });
+            
+            // Iniciar intervalo automático
+            function startSlideInterval() {
+                slideInterval = setInterval(() => {
+                    showSlide(currentSlide + 1);
+                }, 5000);
+            }
+            
+            // Iniciar slider
+            startSlideInterval();
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const areaCards = document.querySelectorAll('.area-card');
+            const showMoreBtn = document.getElementById('showMoreBtn');
+            let allCardsVisible = false;
+            
+            // Función para manejar la visibilidad de las cards
+            function handleCardVisibility() {
+                const isMobile = window.innerWidth <= 768;
+                const visibleCount = isMobile ? 6 : 12;
+                
+                areaCards.forEach((card, index) => {
+                    if (allCardsVisible) {
+                        // Mostrar todas las cards
+                        card.classList.remove('hidden');
+                    } else {
+                        // Mostrar solo el número correspondiente
+                        if (index < visibleCount) {
+                            card.classList.remove('hidden');
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    }
+                });
+                
+                // Actualizar texto del botón
+                if (allCardsVisible) {
+                    showMoreBtn.textContent = 'Ver menos especialidades';
+                } else {
+                    showMoreBtn.textContent = 'Ver más especialidades';
+                }
+            }
+            
+            // Evento para el botón "Ver más especialidades"
+            showMoreBtn.addEventListener('click', function() {
+                allCardsVisible = !allCardsVisible;
+                handleCardVisibility();
+            });
+            
+            // Evento para redirección al hacer clic en cards
+            areaCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') return;
+                    
+                    const url = this.getAttribute('data-url');
+                    if (url) {
+                        window.location.href = url;
+                    }
+                });
+            });
+            
+            // Event listener para cambios de tamaño de pantalla
+            window.addEventListener('resize', handleCardVisibility);
+            
+            // Inicializar visibilidad al cargar la página
+            handleCardVisibility();
+        });
+        
+        // Efecto Parallax que solo se activa cuando la sección es visible
+        document.addEventListener('DOMContentLoaded', function() {
+            const parallaxImage = document.getElementById('parallax-image');
+            const parallaxBanner = document.getElementById('parallax-banner');
+            const parallaxContent = document.getElementById('parallax-content');
+            const btnParallax = document.getElementById('btn-parallax');
+            const statItems = document.querySelectorAll('.stat-item');
+            
+            let isBannerActive = false;
+            
+            function handleParallax() {
+                const rect = parallaxBanner.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                
+                // Verificar si el banner está en el viewport
+                const bannerTop = rect.top;
+                const bannerBottom = rect.bottom;
+                const bannerHeight = rect.height;
+                
+                // El efecto se activa cuando el banner está entre 20% y 80% del viewport
+                if (bannerTop < windowHeight * 0.8 && bannerBottom > windowHeight * 0.2) {
+                    if (!isBannerActive) {
+                        isBannerActive = true;
+                        parallaxContent.classList.add('visible');
+                        btnParallax.classList.add('visible');
+                        statItems.forEach(item => item.classList.add('visible'));
+                        animateNumbers();
+                    }
+                    
+                    // Calcular el progreso del scroll dentro del banner
+                    const scrollProgress = Math.min(Math.max((windowHeight * 0.8 - bannerTop) / (bannerHeight + windowHeight * 0.6), 0), 1);
+                    
+                    // Aplicar el efecto parallax
+                    const startPosition = 30; // Empieza 30% desplazado hacia abajo
+                    const currentPosition = startPosition - (scrollProgress * startPosition);
+                    parallaxImage.style.transform = `translateY(${currentPosition}%)`;
+                    
+                } else {
+                    if (isBannerActive && bannerTop > windowHeight) {
+                        // Reset cuando el banner sale completamente del viewport por arriba
+                        isBannerActive = false;
+                        parallaxImage.style.transform = 'translateY(30%)';
+                        parallaxContent.classList.remove('visible');
+                        btnParallax.classList.remove('visible');
+                        statItems.forEach(item => item.classList.remove('visible'));
+                    }
+                }
+            }
+            
+            // Animación de contadores
+            let numbersAnimated = false;
+            
+            function animateNumbers() {
+                if (numbersAnimated) return;
+                numbersAnimated = true;
+                
+                const statNumbers = document.querySelectorAll('.stat-number');
+                statNumbers.forEach(stat => {
+                    const target = parseInt(stat.getAttribute('data-count'));
+                    const duration = 2500;
+                    const increment = target / (duration / 16);
+                    let current = 0;
+                    
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            stat.textContent = target + (stat.getAttribute('data-count') === '98' ? '%' : '+');
+                            clearInterval(timer);
+                        } else {
+                            stat.textContent = Math.floor(current) + (stat.getAttribute('data-count') === '98' ? '%' : '+');
+                        }
+                    }, 16);
+                });
+            }
+            
+            window.addEventListener('scroll', handleParallax);
+            window.addEventListener('resize', handleParallax);
+            handleParallax();
+        });
+    
+        // Efectos hover suaves para las tarjetas
+        document.addEventListener('DOMContentLoaded', function() {
+            const sedeCards = document.querySelectorAll('.sede-card');
+            
+            sedeCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+        
+        // Efecto socios
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnVerMas = document.getElementById('btnVerMasSocios');
+            const sociosAdicionales = document.getElementById('sociosAdicionales');
+            let sociosVisibles = false;
+            
+            btnVerMas.addEventListener('click', function() {
+                sociosVisibles = !sociosVisibles;
+                
+                if (sociosVisibles) {
+                    sociosAdicionales.classList.add('active');
+                    btnVerMas.innerHTML = 'Ver Menos Socios <i class="fas fa-chevron-up"></i>';
+                    btnVerMas.classList.add('active');
+                } else {
+                    sociosAdicionales.classList.remove('active');
+                    btnVerMas.innerHTML = 'Ver Más Socios <i class="fas fa-chevron-down"></i>';
+                    btnVerMas.classList.remove('active');
+                }
+            });
+            
+            // Efectos hover para las tarjetas
+            const socioCards = document.querySelectorAll('.socio-card');
+            
+            socioCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+
+        // Efectos hover para las tarjetas de noticias
+        document.addEventListener('DOMContentLoaded', function() {
+                const noticiaCards = document.querySelectorAll('.noticia-card');
+                
+                noticiaCards.forEach(card => {
+                    card.addEventListener('mouseenter', function() {
+                        this.style.transform = 'translateY(-5px)';
+                    });
+                    
+                    card.addEventListener('mouseleave', function() {
+                        this.style.transform = 'translateY(0)';
+                    });
+                });
+            });
+    
+        // Botón Volver Arriba
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTop = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            
+            backToTop.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Prevenir envío del formulario
+            const newsletterForm = document.querySelector('.newsletter-form');
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('¡Gracias por suscribirte a nuestro boletín!');
+                this.reset();
+            });
+        });
+
+        // Mobile Menu Functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerLines = document.querySelectorAll('.hamburger-line');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('h-0');
+            mobileMenu.classList.toggle('h-screen');
+            
+            // Animate hamburger to X
+            hamburgerLines[0].classList.toggle('rotate-45');
+            hamburgerLines[0].classList.toggle('translate-y-2');
+            hamburgerLines[1].classList.toggle('opacity-0');
+            hamburgerLines[2].classList.toggle('-rotate-45');
+            hamburgerLines[2].classList.toggle('-translate-y-2');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('h-0');
+            mobileMenu.classList.remove('h-screen');
+            
+            // Reset hamburger animation
+            hamburgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+            hamburgerLines[1].classList.remove('opacity-0');
+            hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('h-0');
+                mobileMenu.classList.remove('h-screen');
+                
+                // Reset hamburger animation
+                hamburgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+                hamburgerLines[1].classList.remove('opacity-0');
+                hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+            });
+        });
+    </script>
+</body>
+</html>
