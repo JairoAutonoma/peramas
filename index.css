@@ -1098,11 +1098,10 @@
         
         .socio-image {
             width: 100%;
-            
-            aspect-ratio: 16 / 9; 
-            background-size: cover;
-            background-position: center;
-            position: relative;
+            height: 280px;
+            background-size: cover;   
+            background-position: 50% 10%; 
+            background-repeat: no-repeat;
         }
         
         .socio-overlay {
