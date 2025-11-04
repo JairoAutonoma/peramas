@@ -1100,8 +1100,17 @@
             width: 100%;
             height: 280px;
             background-size: cover;   
-            background-position: 50% 10%; 
             background-repeat: no-repeat;
+        }
+
+        .socio-image.last{
+            background-position: 50% 45%;
+        }
+
+        @media (max-width:480px){
+            .socio-image{
+                background-position: 50% 10%;
+            }
         }
         
         .socio-overlay {
