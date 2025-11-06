@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Peramas Asesores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="nosotros.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="absolute top-0 left-0 w-full z-50 py-4">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-4">
+                    <div class="logo">
+                        <img src="peramas-removebg-preview.png" alt="Logo" class="w-28 lg:w-32 h-auto filter brightness-0 invert">
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex flex-col items-end space-y-2">
+                    <!-- Social Icons - ARRIBA -->
+                    <div class="social flex items-center space-x-3">
+                        <a href="https://www.facebook.com/peramasasesores" target="_blank"  class="text-white text-xs hover:text-blue-300 transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@peramasasesores" target="_blank" class="text-white text-xs hover:text-blue-300 transition-colors">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/peramasasesores" target="_blank" class="text-white text-xs hover:text-blue-300 transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <!-- Navigation - ABAJO -->
+                    <nav>
+                        <ul class="flex items-center space-x-8">
+                            <li>
+                                <a href="/" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nosotros.html" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#areas" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Áreas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#directorio" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Directorio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#noticias" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Noticias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contacto" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 text-white">
+                    <span class="hamburger-line block w-6 h-0.5 bg-white transition-all"></span>
+                    <span class="hamburger-line block w-6 h-0.5 bg-white transition-all"></span>
+                    <span class="hamburger-line block w-6 h-0.5 bg-white transition-all"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu lg:hidden fixed top-0 left-0 w-full h-0 bg-black bg-opacity-95 overflow-hidden transition-all duration-300">
+                <div class="container mx-auto px-4 pt-20 pb-8">
+                    <button id="close-mobile-menu" class="absolute top-6 right-4 text-white text-2xl">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    
+                    <!-- Mobile Social Icons - ARRIBA -->
+                    <div class="social flex justify-center space-x-6 mb-8">
+                        <a href="https://www.facebook.com/peramasasesores" target="_blank" class="text-white text-lg hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@peramasasesores" target="_blank" class="text-white text-lg hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/peramasasesores" target="_blank" class="text-white text-lg hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Navigation - ABAJO -->
+                    <nav class="text-center">
+                        <ul class="space-y-6">
+                            <li>
+                                <a href="#inicio" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nosotros.html" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#areas" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Áreas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#sedes" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Directorio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#noticias" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Noticias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contacto" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Nosotros -->
+    <section class="nosotros-banner">
+        <div class="banner-image"></div>
+        <div class="banner-overlay">
+            <div class="banner-content">
+                <p class="banner-quote">
+                    Nuestra fortaleza es ver el negocio desde todas las aristas legales, creando soluciones que previenen riesgos y generan valor.
+                </p>
+                <p class="banner-source">
+                    Peramás Asesores S.A.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navegación de pestañas -->
+    <div class="nosotros-tabs">
+        <div class="tab-item active" data-tab="quienes-somos">Quiénes Somos</div>
+        <!--<div class="tab-item" data-tab="compromiso-pais">Nuestro Compromiso con el País</div>-->
+    </div>
+
+    <!-- Contenido de las pestañas -->
+    <div class="tab-content active" id="quienes-somos">
+        <section class="quienes-somos">
+        <div class="container">
+            <div class="section-header">
+                    <h2 class="section-title">Nosotros</h2>
+                    <div class="section-subtitle">
+                        <p>Peramás Asesores S.A. es una firma legal que ofrece asesoría jurídica integral y personalizada a clientes tanto nacionales como extranjeros, sean personas naturales o jurídicas.
+Nuestro equipo está conformado por profesionales con amplia trayectoria y experiencia en diversas áreas del derecho.</p>
+                    </div>
+                </div>
+            <div class="mision-vision">
+                <div class="mision">
+                    <h3>Misión</h3>
+                    <p>Brindar asesoría jurídica integral, estratégica y personalizada a personas naturales y jurídicas, tanto nacionales como internacionales, a través de un equipo multidisciplinario de profesionales con amplia experiencia. Nos comprometemos a proteger los intereses de nuestros clientes, anticipar riesgos legales y generar soluciones que aporten valor real a sus actividades y negocios.</p>
+                </div>
+                
+                <div class="image-logo-mid">
+                    <div class="image">
+                        <figure>
+                            <img src="peramas-removebg-preview.png" alt="Logo Bufete Legal" onerror="this.style.display='none'">
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="vision">
+                    <h3>Visión</h3>
+                    <p>Ser reconocidos como el estudio jurídico líder en asesoría legal integral en el país y la región, destacado por su excelencia profesional, enfoque preventivo y capacidad para acompañar a las empresas en un entorno legal dinámico, asegurando su crecimiento sostenible y cumplimiento normativo en todas las áreas del derecho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!--<div class="tab-content" id="compromiso-pais">
+        <section class="compromiso-pais">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestro Compromiso con el País</h2>
+                    <div class="section-subtitle">
+                        <p>Como firma legal líder, estamos comprometidos con el desarrollo y progreso de nuestro país, contribuyendo activamente en diversos ámbitos de la sociedad.</p>
+                    </div>
+                </div>
+
+                <div class="compromiso-grid">
+                    <div class="compromiso-item">
+                        <div class="compromiso-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Trabajo Pro Bono</h3>
+                        <p>Brindamos asesoría legal gratuita a organizaciones sin fines de lucro y personas de escasos recursos, contribuyendo al acceso a la justicia.</p>
+                    </div>
+                    
+                    <div class="compromiso-item">
+                        <div class="compromiso-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Sostenibilidad</h3>
+                        <p>Implementamos prácticas sostenibles en nuestras operaciones y promovemos la responsabilidad ambiental entre nuestros clientes y colaboradores.</p>
+                    </div>
+                    
+                    <div class="compromiso-item">
+                        <div class="compromiso-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Educación Legal</h3>
+                        <p>Participamos activamente en programas de capacitación y formación de nuevos talentos en el ámbito legal, contribuyendo al desarrollo profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>-->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Columna 1 - Información -->
+                <div class="footer-column footer-info">
+                    <h3>Peramás Asesores</h3>
+                    <p>
+                        Más de 25 años brindando soluciones legales integrales y personalizadas. 
+                        Nuestro compromiso con la excelencia y la innovación nos posiciona como 
+                        líderes en el sector legal.
+                    </p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Rivera Navarrete 395 - Ofic. 604 <br>Edificio T Tower - San Isidro</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(01) 7691340 - +51 938231858</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>peramasasesores@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna 2 - Enlaces rápidos -->
+                <div class="footer-column footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <div class="links">
+                        <div class="links-1">
+                        <ul>
+                            <li><a href="/">Inicio</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="areas">Áreas</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-2">
+                        <ul>
+                            <li><a href="#directorio">Directorio</a></li>
+                            <li><a href="#noticias">Noticias</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                </div>
+                
+                
+                <!-- Columna 3 - Boletín informativo -->
+                <div class="footer-column newsletter">
+                    <h3>Boletín Informativo</h3>
+                    <p>Suscríbete para recibir las últimas novedades legales y actualizaciones de nuestro bufete.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="newsletter-btn">Suscribirse</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/peramasasesores" class="social-link" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/peramasasesores" class="social-link" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@peramasasesores" target="_blank"
+                        class="social-link">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer inferior -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        &copy; 2025 PERAMÁS ASESORES. Todos los derechos reservados.
+                    </div>
+                    <div class="legal-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos de Servicio</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabItems = document.querySelectorAll('.tab-item');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            // Función para cambiar pestaña
+            function switchTab(tabId) {
+                // Remover clase active de todas las pestañas y contenidos
+                tabItems.forEach(item => item.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Activar pestaña y contenido seleccionados
+                document.querySelector(`.tab-item[data-tab="${tabId}"]`).classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            }
+            
+            // Event listeners para las pestañas
+            tabItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    switchTab(tabId);
+                });
+            });
+            
+            // Efectos hover para los elementos de compromiso
+            const compromisoItems = document.querySelectorAll('.compromiso-item');
+            
+            compromisoItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    
+        // Mobile Menu Functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerLines = document.querySelectorAll('.hamburger-line');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('h-0');
+            mobileMenu.classList.toggle('h-screen');
+            
+            // Animate hamburger to X
+            hamburgerLines[0].classList.toggle('rotate-45');
+            hamburgerLines[0].classList.toggle('translate-y-2');
+            hamburgerLines[1].classList.toggle('opacity-0');
+            hamburgerLines[2].classList.toggle('-rotate-45');
+            hamburgerLines[2].classList.toggle('-translate-y-2');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('h-0');
+            mobileMenu.classList.remove('h-screen');
+            
+            // Reset hamburger animation
+            hamburgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+            hamburgerLines[1].classList.remove('opacity-0');
+            hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('h-0');
+                mobileMenu.classList.remove('h-screen');
+                
+                // Reset hamburger animation
+                hamburgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+                hamburgerLines[1].classList.remove('opacity-0');
+                hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+            });
+        });
+    
+    </script>
+</body>
+</html>
