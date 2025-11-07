@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros - Peramas Asesores</title>
+    <title>Contacto - Peramás Asesores</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="nosotros.css">
+
 </head>
 <body>
-
     <!-- Header -->
     <header id="header" class="absolute top-0 left-0 w-full z-50 py-4">
         <div class="container mx-auto px-4 lg:px-8">
@@ -163,215 +163,155 @@
         </div>
     </section>
 
-    <!-- Navegación de pestañas -->
-    <div class="nosotros-tabs">
-        <div class="tab-item active" data-tab="quienes-somos">Quiénes Somos</div>
-        <!--<div class="tab-item" data-tab="compromiso-pais">Nuestro Compromiso con el País</div>-->
-    </div>
-
-    <!-- Contenido de las pestañas -->
-    <div class="tab-content active" id="quienes-somos">
-        <section class="quienes-somos">
+    <!-- Sección Contacto -->
+    <section class="contacto" id="contacto">
         <div class="container">
-            <div class="section-header">
-                    <h2 class="section-title">Nosotros</h2>
-                    <div class="section-subtitle">
-                        <p>Peramás Asesores S.A. es una firma legal que ofrece asesoría jurídica integral y personalizada a clientes tanto nacionales como extranjeros, sean personas naturales o jurídicas.
-Nuestro equipo está conformado por profesionales con amplia trayectoria y experiencia en diversas áreas del derecho.</p>
+            <h2 class="section-title">Contáctenos</h2>
+            <p class="section-subtitle">Estamos aquí para brindarle asesoría legal especializada. No dude en contactarnos para programar una consulta.</p>
+            
+            <div class="contacto-grid">
+                <!-- Información de Contacto -->
+                <div class="contacto-info">
+                    <h3 class="info-title">Información de Contacto</h3>
+                    
+                    <div class="contacto-items">
+                        <div class="contacto-item">
+                            <div class="contacto-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contacto-details">
+                                <h3>Dirección</h3>
+                                <p>Av. Rivera Navarrete 395 - Ofic. 604<br>Edificio T Tower - San Isidro, Lima</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-item">
+                            <div class="contacto-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contacto-details">
+                                <h3>Teléfonos</h3>
+                                <p>
+                                    <a href="tel:+51938231858">+51 938 231 858</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-item">
+                            <div class="contacto-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contacto-details">
+                                <h3>Correo Electrónico</h3>
+                                <p><a href="mailto:peramasasesores@gmail.com">peramasasesores@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contacto-item">
+                            <div class="contacto-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contacto-details">
+                                <h3>Horario de Atención</h3>
+                                <div class="horario">
+                                    <div class="horario-item">
+                                        <span class="horario-dia">Lunes - Viernes</span>
+                                        <span class="horario-horas">9:00 AM - 5:00 PM</span>
+                                    </div>
+                                    <div class="horario-item">
+                                        <span class="horario-dia">Sábados</span>
+                                        <span class="horario-horas">Cerrado</span>
+                                    </div>
+                                    <div class="horario-item">
+                                        <span class="horario-dia">Domingos</span>
+                                        <span class="horario-horas">Cerrado</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            <div class="mision-vision">
-                <div class="mision">
-                    <h3>Misión</h3>
-                    <p>Brindar asesoría jurídica integral, estratégica y personalizada a personas naturales y jurídicas, tanto nacionales como internacionales, a través de un equipo multidisciplinario de profesionales con amplia experiencia. Nos comprometemos a proteger los intereses de nuestros clientes, anticipar riesgos legales y generar soluciones que aporten valor real a sus actividades y negocios.</p>
-                </div>
                 
-                <div class="image-logo-mid">
-                    <div class="image">
-                        <figure>
-                            <img src="peramas-removebg-preview.png" alt="Logo Bufete Legal" onerror="this.style.display='none'">
-                        </figure>
-                    </div>
+                <!-- Formulario de Contacto -->
+                <div class="contacto-form">
+                    <h3 class="form-title">Solicitar Consulta</h3>
+                    
+                    <form id="formularioContacto">
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre Completo *</label>
+                            <input type="text" id="nombre" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Correo Electrónico *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" id="telefono" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto" class="form-label">Área de Consulta *</label>
+                            <select id="asunto" class="form-control form-select" required>
+                                <option value="" disabled selected>Seleccione un área</option>
+                                <option value="corporativo">Derecho Corporativo</option>
+                                <option value="procesal">Derecho Procesal</option>
+                                <option value="penal">Derecho Penal</option>
+                                <option value="familia">Derecho de Familia</option>
+                                <option value="tributario">Derecho Tributario</option>
+                                <option value="laboral">Derecho Laboral</option>
+                                <option value="inmobiliario">Derecho Inmobiliario</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje" class="form-label">Mensaje *</label>
+                            <textarea id="mensaje" class="form-control" placeholder="Describa brevemente su consulta legal..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Enviar Consulta</button>
+                        
+                        <div id="mensajeConfirmacion" class="mensaje-confirmacion">
+                            ¡Gracias por su mensaje! Nos pondremos en contacto con usted en breve.
+                        </div>
+                    </form>
                 </div>
-                
-                <div class="vision">
-                    <h3>Visión</h3>
-                    <p>Ser reconocidos como el estudio jurídico líder en asesoría legal integral en el país y la región, destacado por su excelencia profesional, enfoque preventivo y capacidad para acompañar a las empresas en un entorno legal dinámico, asegurando su crecimiento sostenible y cumplimiento normativo en todas las áreas del derecho.</p>
+            </div>
+            
+            <!-- Mapa -->
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.308794568581!2d-77.02942522536502!3d-12.091000042725062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c864083893b7%3A0xf6bf691508b68eb!2sAv.%20Javier%20Prado%20esq.%20Rivera%20Navarrete%2C%20Av.%20Ricardo%20Rivera%20Navarrete%20395%2C%20San%20Isidro%2015046!5e0!3m2!1ses-419!2spe!4v1762553567801!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="mapa-placeholder">
+                    <i class="fas fa-map-marked-alt" style="font-size: 2rem; margin-right: 10px;"></i>
+                    Mapa de Ubicación - Av. Rivera Navarrete 395, San Isidro
                 </div>
             </div>
         </div>
     </section>
-    </div>
-
-    <!--<div class="tab-content" id="compromiso-pais">
-        <section class="compromiso-pais">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Nuestro Compromiso con el País</h2>
-                    <div class="section-subtitle">
-                        <p>Como firma legal líder, estamos comprometidos con el desarrollo y progreso de nuestro país, contribuyendo activamente en diversos ámbitos de la sociedad.</p>
-                    </div>
-                </div>
-
-                <div class="compromiso-grid">
-                    <div class="compromiso-item">
-                        <div class="compromiso-icon">
-                            <i class="fas fa-hands-helping"></i>
-                        </div>
-                        <h3>Trabajo Pro Bono</h3>
-                        <p>Brindamos asesoría legal gratuita a organizaciones sin fines de lucro y personas de escasos recursos, contribuyendo al acceso a la justicia.</p>
-                    </div>
-                    
-                    <div class="compromiso-item">
-                        <div class="compromiso-icon">
-                            <i class="fas fa-seedling"></i>
-                        </div>
-                        <h3>Sostenibilidad</h3>
-                        <p>Implementamos prácticas sostenibles en nuestras operaciones y promovemos la responsabilidad ambiental entre nuestros clientes y colaboradores.</p>
-                    </div>
-                    
-                    <div class="compromiso-item">
-                        <div class="compromiso-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>Educación Legal</h3>
-                        <p>Participamos activamente en programas de capacitación y formación de nuevos talentos en el ámbito legal, contribuyendo al desarrollo profesional.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>-->
-
-    <!-- Footer -->
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="footer-main">
-                <!-- Columna 1 - Información -->
-                <div class="footer-column footer-info">
-                    <h3>Peramás Asesores</h3>
-                    <p>
-                        Más de 25 años brindando soluciones legales integrales y personalizadas. 
-                        Nuestro compromiso con la excelencia y la innovación nos posiciona como 
-                        líderes en el sector legal.
-                    </p>
-                    <div class="footer-contact">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Av. Rivera Navarrete 395 - Ofic. 604 <br>Edificio T Tower - San Isidro</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>(01) 7691340 - +51 938231858</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>peramasasesores@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Columna 2 - Enlaces rápidos -->
-                <div class="footer-column footer-links">
-                    <h3>Enlaces Rápidos</h3>
-                    <div class="links">
-                        <div class="links-1">
-                        <ul>
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="nosotros.html">Nosotros</a></li>
-                            <li><a href="areas.html">Áreas</a></li>
-                        </ul>
-                    </div>
-                    <div class="links-2">
-                        <ul>
-                            <li><a href="socios.html">Directorio</a></li>
-                            <li><a href="noticias.html">Noticias</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                    </div>
-                    
-                </div>
-                
-                
-                <!-- Columna 3 - Boletín informativo -->
-                <div class="footer-column newsletter">
-                    <h3>Boletín Informativo</h3>
-                    <p>Suscríbete para recibir las últimas novedades legales y actualizaciones de nuestro bufete.</p>
-                    <form class="newsletter-form">
-                        <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
-                        <button type="submit" class="newsletter-btn">Suscribirse</button>
-                    </form>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/peramasasesores" class="social-link" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/peramasasesores" class="social-link" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@peramasasesores" target="_blank"
-                        class="social-link">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Footer inferior -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-bottom-content">
-                    <div class="copyright">
-                        &copy; 2025 PERAMÁS ASESORES. Todos los derechos reservados.
-                    </div>
-                    <div class="legal-links">
-                        <a href="#">Política de Privacidad</a>
-                        <a href="#">Términos de Servicio</a>
-                        <a href="#">Aviso Legal</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabItems = document.querySelectorAll('.tab-item');
-            const tabContents = document.querySelectorAll('.tab-content');
+        // Manejo del formulario de contacto
+        document.getElementById('formularioContacto').addEventListener('submit', function(e) {
+            e.preventDefault();
             
-            // Función para cambiar pestaña
-            function switchTab(tabId) {
-                // Remover clase active de todas las pestañas y contenidos
-                tabItems.forEach(item => item.classList.remove('active'));
-                tabContents.forEach(content => content.classList.remove('active'));
-                
-                // Activar pestaña y contenido seleccionados
-                document.querySelector(`.tab-item[data-tab="${tabId}"]`).classList.add('active');
-                document.getElementById(tabId).classList.add('active');
-            }
+            // Aquí normalmente enviarías los datos del formulario a un servidor
+            // Por ahora, solo mostraremos un mensaje de confirmación
             
-            // Event listeners para las pestañas
-            tabItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    const tabId = this.getAttribute('data-tab');
-                    switchTab(tabId);
-                });
-            });
+            const mensajeConfirmacion = document.getElementById('mensajeConfirmacion');
+            mensajeConfirmacion.classList.add('mostrar');
             
-            // Efectos hover para los elementos de compromiso
-            const compromisoItems = document.querySelectorAll('.compromiso-item');
+            // Limpiar el formulario
+            this.reset();
             
-            compromisoItems.forEach(item => {
-                item.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                });
-                
-                item.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
-            });
+            // Ocultar el mensaje después de 5 segundos
+            setTimeout(() => {
+                mensajeConfirmacion.classList.remove('mostrar');
+            }, 5000);
         });
-    
+        
         // Mobile Menu Functionality
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const closeMobileMenu = document.getElementById('close-mobile-menu');
@@ -413,7 +353,6 @@ Nuestro equipo está conformado por profesionales con amplia trayectoria y exper
                 hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
             });
         });
-    
     </script>
 </body>
 </html>

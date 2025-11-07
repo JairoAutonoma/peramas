@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="peramas-removebg.png">
+    <title>Peramás Asesores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Variables de colores y tipografía */
+        :root {
+            --primary-color: #1c2f50;
+            --secondary-color: #ffffff;
+            --accent-color: #8B7355;
+            --font-primary: 'Open Sans', sans-serif;
+        }
+        
+        /* Reset y estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        /* Contenedor principal */
+        .construction-container {
+            max-width: 500px;
+            width: 90%;
+            padding: 40px;
+        }
+        
+        /* Logo */
+        .logo {
+            margin-bottom: 40px;
+        }
+        
+        .logo-image {
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            filter: brightness(0) invert(1);
+        }
+        
+        .logo-fallback {
+            width: 150px;
+            height: 150px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-color);
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin: 0 auto;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Texto */
+        .construction-text {
+            margin-bottom: 50px;
+        }
+        
+        .construction-text h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .construction-text p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+        
+        /* Redes sociales */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .social-link:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Responsive */
+        @media (max-width: 480px) {
+            .construction-container {
+                padding: 30px 20px;
+            }
+            
+            .logo-image {
+                max-width: 150px;
+            }
+            
+            .logo-fallback {
+                width: 120px;
+                height: 120px;
+                font-size: 1.1rem;
+            }
+            
+            .construction-text h1 {
+                font-size: 1.8rem;
+            }
+            
+            .construction-text p {
+                font-size: 1rem;
+            }
+            
+            .social-links {
+                gap: 15px;
+            }
+            
+            .social-link {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="construction-container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="peramas-removebg-preview.png" alt="Bufete Legal" class="logo-image" onerror="this.style.display='none'">
+            <div class="logo-fallback" style="display: none;" id="logoFallback">
+                BUFETE LEGAL
+            </div>
+        </div>
+        
+        <!-- Texto -->
+        <div class="construction-text">
+            <h1>Estamos en Construcción</h1>
+            <p>Nuestro sitio web está en desarrollo. Próximamente estaremos en línea.</p>
+        </div>
+        
+        <!-- Redes sociales -->
+        <div class="social-links">
+            <a href="https://pe.linkedin.com/in/estudio-jur%C3%ADdico-peram%C3%A1s-asesores-717123250" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.facebook.com/peramasasesores" class="social-link" aria-label="Facebook">
+                <i class="fab    fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/peramasasesores" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@peramasasesores " class="social-link" aria-label="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar logo de respaldo si la imagen no carga
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoImage = document.querySelector('.logo-image');
+            const logoFallback = document.getElementById('logoFallback');
+            
+            // Verificar si la imagen cargó correctamente
+            if (logoImage.complete && logoImage.naturalHeight === 0) {
+                logoFallback.style.display = 'flex';
+            }
+            
+            logoImage.addEventListener('error', function() {
+                logoFallback.style.display = 'flex';
+            });
+        });
+    </script>
+</body>
+</html>
