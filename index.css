@@ -372,9 +372,24 @@
         }
         
         .slide-3 {
-            background-image: url('sqsq.png');
+            background-image: url('fondo.avif');
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        
+        .social-media-slide{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            color: black;
+            font-size: xx-large;
+            z-index: 1;
+        }
+        .social-media-slide i{
+            margin-right: 25px;
+        }
         /* Overlay superior */
         .hero::before {
             content: "";
@@ -422,10 +437,6 @@
             z-index: 1;
         }
 
-       
-
-
-        
         .banner-end{
             position: absolute;
             bottom: 0;
@@ -845,9 +856,10 @@
             .area-card h3 {
                 font-size: 1rem;
             }
+
             
-            .area-card .description {
-                font-size: 0.8rem;
+            .area-card .description p{
+                font-size: 14px;
             }
         }
 
@@ -1009,9 +1021,9 @@
             }
             
             .stats-container {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 30px;
-                margin-top: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             
             .stat-number {
@@ -1023,14 +1035,18 @@
             .parallax-banner {
                 height: 70vh;
             }
-            
-            .parallax-content h2 {
-                font-size: 1.8rem;
+            .parallax-content {
+                text-align: center;
+                color: var(--secondary-color);
+                max-width: 100%;
+                padding: 0 20px;
+            }
+            .parallax-content h2,p {
+                font-size: 1.2rem;
             }
             
             .stats-container {
-                grid-template-columns: 1fr;
-                gap: 25px;
+                display: none;
             }
             
             .btn-parallax {
@@ -1103,8 +1119,8 @@
             background-repeat: no-repeat;
         }
 
-        .socio-image.last{
-            background-position: 50% 45%;
+        .socio-image.personality{
+            background-position: 50% 40%;
         }
 
         @media (max-width:480px){
@@ -1325,7 +1341,6 @@
             }
             
             .socio-experience {
-                flex-direction: column;
                 gap: 15px;
             }
         }

@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio - Peramás Asesores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="socios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="absolute top-0 left-0 w-full z-50 py-4">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-4">
+                    <div class="logo">
+                        <img src="peramas-removebg-preview.png" alt="Logo" class="w-28 lg:w-32 h-auto filter brightness-0 invert">
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex flex-col items-end space-y-2">
+                    <!-- Social Icons - ARRIBA -->
+                    <div class="social flex items-center space-x-3">
+                        <a href="https://www.facebook.com/peramasasesores" target="_blank"  class="text-white text-xs hover:text-blue-300 transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@peramasasesores" target="_blank" class="text-white text-xs hover:text-blue-300 transition-colors">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/peramasasesores" target="_blank" class="text-white text-xs hover:text-blue-300 transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <!-- Navigation - ABAJO -->
+                    <nav>
+                        <ul class="flex items-center space-x-8">
+                            <li>
+                                <a href="index.html" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nosotros.html" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#areas" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Áreas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="socios.html" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Directorio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#noticias" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Noticias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contacto" class="nav-link text-white text-xs uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 text-white">
+                    <span class="hamburger-line block w-6 h-0.5 bg-white transition-all"></span>
+                    <span class="hamburger-line block w-6 h-0.5 bg-white transition-all"></span>
+                    <span class="hamburger-line block w-6 h-0.5 bg-white transition-all"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu lg:hidden fixed top-0 left-0 w-full h-0 bg-black bg-opacity-95 overflow-hidden transition-all duration-300">
+                <div class="container mx-auto px-4 pt-20 pb-8">
+                    <button id="close-mobile-menu" class="absolute top-6 right-4 text-white text-2xl">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    
+                    <!-- Mobile Social Icons - ARRIBA -->
+                    <div class="social flex justify-center space-x-6 mb-8">
+                        <a href="https://www.facebook.com/peramasasesores" target="_blank" class="text-white text-lg hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@peramasasesores" target="_blank" class="text-white text-lg hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/peramasasesores" target="_blank" class="text-white text-lg hover:text-gray-300 transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Navigation - ABAJO -->
+                    <nav class="text-center">
+                        <ul class="space-y-6">
+                            <li>
+                                <a href="index.html" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="nosotros.html" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#areas" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Áreas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#sedes" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Directorio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#noticias" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Noticias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contacto" class="nav-link block text-white text-lg uppercase tracking-wide opacity-80 hover:opacity-100 transition-opacity py-2">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Nosotros -->
+    <section class="nosotros-banner">
+        <div class="banner-image"></div>
+        <div class="banner-overlay">
+            <div class="banner-content">
+                <p class="banner-quote">
+                    Nuestra fortaleza es ver el negocio desde todas las aristas legales, creando soluciones que previenen riesgos y generan valor.
+                </p>
+                <p class="banner-source">
+                    Peramás Asesores S.A.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Socios -->
+    <section class="socios" id="socios">
+        <div class="container">
+            <h2 class="section-title">Nuestro Directorio</h2>
+            
+            <!-- Navegación de pestañas -->
+            <div class="socios-tabs">
+                <div class="socio-tab active" data-tab="fundadores">Socio Fundador</div>
+                <div class="socio-tab" data-tab="demas-socios">Socios</div>
+            </div>
+            
+            <!-- Contenido se cargará dinámicamente desde JSON -->
+            <div id="socios-content"></div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="socioModal">
+        <div class="modal-content" id="modalContent">
+            <!-- Contenido del modal se cargará dinámicamente -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Columna 1 - Información -->
+                <div class="footer-column footer-info">
+                    <h3>Peramás Asesores</h3>
+                    <p>
+                        Más de 25 años brindando soluciones legales integrales y personalizadas. 
+                        Nuestro compromiso con la excelencia y la innovación nos posiciona como 
+                        líderes en el sector legal.
+                    </p>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Av. Rivera Navarrete 395 - Ofic. 604 <br>Edificio T Tower - San Isidro</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(01) 7691340 - +51 938231858</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>peramasasesores@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna 2 - Enlaces rápidos -->
+                <div class="footer-column footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <div class="links">
+                        <div class="links-1">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="areas">Áreas</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-2">
+                        <ul>
+                            <li><a href="socios.html">Directorio</a></li>
+                            <li><a href="#noticias">Noticias</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    
+                </div>
+                
+                
+                <!-- Columna 3 - Boletín informativo -->
+                <div class="footer-column newsletter">
+                    <h3>Boletín Informativo</h3>
+                    <p>Suscríbete para recibir las últimas novedades legales y actualizaciones de nuestro bufete.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="newsletter-btn">Suscribirse</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/peramasasesores" class="social-link" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/peramasasesores" class="social-link" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@peramasasesores" target="_blank"
+                        class="social-link">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer inferior -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        &copy; 2025 PERAMÁS ASESORES. Todos los derechos reservados.
+                    </div>
+                    <div class="legal-links">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos de Servicio</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerLines = document.querySelectorAll('.hamburger-line');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('h-0');
+            mobileMenu.classList.toggle('h-screen');
+            
+            // Animate hamburger to X
+            hamburgerLines[0].classList.toggle('rotate-45');
+            hamburgerLines[0].classList.toggle('translate-y-2');
+            hamburgerLines[1].classList.toggle('opacity-0');
+            hamburgerLines[2].classList.toggle('-rotate-45');
+            hamburgerLines[2].classList.toggle('-translate-y-2');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('h-0');
+            mobileMenu.classList.remove('h-screen');
+            
+            // Reset hamburger animation
+            hamburgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+            hamburgerLines[1].classList.remove('opacity-0');
+            hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('h-0');
+                mobileMenu.classList.remove('h-screen');
+                
+                // Reset hamburger animation
+                hamburgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+                hamburgerLines[1].classList.remove('opacity-0');
+                hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+            });
+        });
+    
+        // Datos de los socios en JSON para mejor mantenibilidad
+        const sociosData = {
+            "fundadores": [
+                {
+                    "id": 1,
+                    "nombre": "Enrique Peramás Diaz",
+                    "titulo": "Socio Fundador",
+                    "especialidad": "Especialista en Derecho Corporativo, Procesal y Penal.",
+                    "imagen": "socios/enrique-peramas.avif",
+                    "experiencia": {
+                        "anios": 25,
+                        "casos": "500+",
+                        "exito": "98%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "enrique.peramas@peramas.com",
+                        "telefono": "+1 (555) 123-4567"
+                    },
+                    "descripcionLarga": `
+                        <p>Abogado con más de 31 años de experiencia en el ejercicio del Derecho, especializado en Derecho Corporativo, Procesal y Penal. Es fundador y socio principal de Peramás Asesores S.A. <br> <br>Ha sido alcalde del distrito del Rímac (2011–2018) y docente en la Facultad de Derecho de la Universidad San Martín de Porres. Posee un Magíster en Derecho Empresarial por la Universidad de Lima, estudios concluídos de maestría en Derecho Procesal (PUCP) y Derecho Penal, y cursó un Doctorado en Gobierno y Políticas Públicas (USMP).<br> <br>
+                        
+                        Cuenta con formación ejecutiva en Alta Dirección, Finanzas Estratégicas y Gobierno Corporativo (PAD–Universidad de Piura). Ha recibido reconocimientos como la Orden Cruz Peruana al Mérito Naval (2016) y su elección como Secretario Regional para América del Sur de la Organización de Ciudades de Patrimonio Mundial - OCPM (2017).<br> <br>
+                        Su trayectoria combina gestión pública, liderazgo institucional y asesoría jurídica, consolidándolo como un referente en derecho y gobernanza urbana. </p>
+                    `
+                }
+            ],
+            "demasSocios": [
+                {
+                    "id": 2,
+                    "nombre": "Eduardo Peramás Ayala",
+                    "titulo": "Socio",
+                    "especialidad": "Especialista en ...",
+                    "imagen": "socios/eduardo-peramas.jpg",
+                    "experiencia": {
+                        "anios": 22,
+                        "casos": "350+",
+                        "exito": "96%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "@peramas.com",
+                        "telefono": "+1 (555) 123-4568"
+                    },
+                    "descripcionLarga": `
+                        <p>El Dr cuenta con 22 años de experiencia especializada en derecho inmobiliario y propiedad intelectual. Su trayectoria incluye la representación de desarrolladores inmobiliarios internacionales y la protección de activos intelectuales para empresas tecnológicas.</p>
+                        
+                        <p>Entre sus logros más destacados se encuentran:</p>
+                        
+                        <ul>
+                            <li>Negociación de contratos de desarrollo inmobiliario por más de $500 millones</li>
+                            <li>Registro y protección de más de 200 marcas comerciales internacionales</li>
+                            <li>Asesoramiento en transacciones de propiedad intelectual complejas</li>
+                            <li>Litigio exitoso en casos de infracción de patentes</li>
+                        </ul>
+                        
+                        <p>Es miembro activo de la International Trademark Association y ha sido ponente en numerosos congresos internacionales de propiedad intelectual.</p>
+                    `
+                },
+                {
+                    "id": 3,
+                    "nombre": "Marco Antonio Rios Luna",
+                    "titulo": "Socio",
+                    "especialidad": "Especialista en Derecho de Familia y Sucesiones",
+                    "imagen": "socios/marco-rios.avif",
+                    "experiencia": {
+                        "anios": 18,
+                        "casos": "280+",
+                        "exito": "94%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "maria.gonzalez@bufetelegal.com",
+                        "telefono": "+1 (555) 123-4569"
+                    },
+                    "descripcionLarga": `
+                        <p>La Dra. María González se especializa en derecho de familia y sucesiones con 18 años de experiencia ayudando a familias en situaciones complejas. Su enfoque combina expertise legal con sensibilidad humana.</p>
+                        
+                        <p>Su práctica incluye:</p>
+                        
+                        <ul>
+                            <li>Divorcios complejos con activos internacionales</li>
+                            <li>Planificación sucesoria y testamentos</li>
+                            <li>Custodia y alimentos</li>
+                            <li>Adopciones internacionales</li>
+                            <li>Protección de menores</li>
+                        </ul>
+                        
+                        <p>Es mediadora certificada y ha logrado resolver más del 85% de sus casos mediante acuerdos extrajudiciales, preservando las relaciones familiares y reduciendo costos emocionales para sus clientes.</p>
+                    `
+                },
+                {
+                    "id": 4,
+                    "nombre": "Abraham Rivas Lombardi",
+                    "titulo": "Socio",
+                    "especialidad": "Especialista en Derecho Tributario y Financiero",
+                    "imagen": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                    "experiencia": {
+                        "anios": 16,
+                        "casos": "320+",
+                        "exito": "93%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "@peramas.com",
+                        "telefono": "+1 (555) 123-4570"
+                    },
+                    "descripcionLarga": `
+                        <p>El Dr. Javier López es experto en derecho tributario y financiero con 16 años de experiencia asesorando a corporaciones e individuos de alto patrimonio neto en optimización fiscal y cumplimiento regulatorio.</p>
+                        
+                        <p>Su expertise incluye:</p>
+                        
+                        <ul>
+                            <li>Planificación fiscal internacional</li>
+                            <li>Estructuración de operaciones financieras complejas</li>
+                            <li>Defensa en procedimientos de fiscalización tributaria</li>
+                            <li>Asesoramiento en compliance financiero</li>
+                            <li>Reorganizaciones corporativas con implicaciones fiscales</li>
+                        </ul>
+                        
+                        <p>Ha representado exitosamente a clientes en disputas fiscales ante autoridades nacionales e internacionales, logrando ahorros fiscales significativos mientras garantiza el cumplimiento normativo completo.</p>
+                    `
+                },
+                {
+                    "id": 5,
+                    "nombre": "Jorge Márquez Lombardi",
+                    "titulo": "Socio",
+                    "especialidad": "Especialista en Derecho Tributario y Financiero",
+                    "imagen": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                    "experiencia": {
+                        "anios": 16,
+                        "casos": "320+",
+                        "exito": "93%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "@peramas.com",
+                        "telefono": "+1 (555) 123-4570"
+                    },
+                    "descripcionLarga": `
+                        <p>El Dr. Javier López es experto en derecho tributario y financiero con 16 años de experiencia asesorando a corporaciones e individuos de alto patrimonio neto en optimización fiscal y cumplimiento regulatorio.</p>
+                        
+                        <p>Su expertise incluye:</p>
+                        
+                        <ul>
+                            <li>Planificación fiscal internacional</li>
+                            <li>Estructuración de operaciones financieras complejas</li>
+                            <li>Defensa en procedimientos de fiscalización tributaria</li>
+                            <li>Asesoramiento en compliance financiero</li>
+                            <li>Reorganizaciones corporativas con implicaciones fiscales</li>
+                        </ul>
+                        
+                        <p>Ha representado exitosamente a clientes en disputas fiscales ante autoridades nacionales e internacionales, logrando ahorros fiscales significativos mientras garantiza el cumplimiento normativo completo.</p>
+                    `
+                },
+                {
+                    "id": 6,
+                    "nombre": "Eduardo Hinojosa Cabada",
+                    "titulo": "Socio",
+                    "especialidad": "Especialista en Derecho Tributario y Financiero",
+                    "imagen": "socios/eduardo-hinojosa.avif",
+                    "experiencia": {
+                        "anios": 16,
+                        "casos": "320+",
+                        "exito": "93%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "@peramas.com",
+                        "telefono": "+1 (555) 123-4570"
+                    },
+                    "descripcionLarga": `
+                        <p>El Dr. Javier López es experto en derecho tributario y financiero con 16 años de experiencia asesorando a corporaciones e individuos de alto patrimonio neto en optimización fiscal y cumplimiento regulatorio.</p>
+                        
+                        <p>Su expertise incluye:</p>
+                        
+                        <ul>
+                            <li>Planificación fiscal internacional</li>
+                            <li>Estructuración de operaciones financieras complejas</li>
+                            <li>Defensa en procedimientos de fiscalización tributaria</li>
+                            <li>Asesoramiento en compliance financiero</li>
+                            <li>Reorganizaciones corporativas con implicaciones fiscales</li>
+                        </ul>
+                        
+                        <p>Ha representado exitosamente a clientes en disputas fiscales ante autoridades nacionales e internacionales, logrando ahorros fiscales significativos mientras garantiza el cumplimiento normativo completo.</p>
+                    `
+                },
+                {
+                    "id": 7,
+                    "nombre": "Pamela Peramás Rivera",
+                    "titulo": "Socia",
+                    "especialidad": "Especialista en Derecho Tributario y Financiero",
+                    "imagen": "socios/pamela-peramas.jpg",
+                    "experiencia": {
+                        "anios": 16,
+                        "casos": "320+",
+                        "exito": "93%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "@peramas.com",
+                        "telefono": "+1 (555) 123-4570"
+                    },
+                    "descripcionLarga": `
+                        <p>El Dr. Javier López es experto en derecho tributario y financiero con 16 años de experiencia asesorando a corporaciones e individuos de alto patrimonio neto en optimización fiscal y cumplimiento regulatorio.</p>
+                        
+                        <p>Su expertise incluye:</p>
+                        
+                        <ul>
+                            <li>Planificación fiscal internacional</li>
+                            <li>Estructuración de operaciones financieras complejas</li>
+                            <li>Defensa en procedimientos de fiscalización tributaria</li>
+                            <li>Asesoramiento en compliance financiero</li>
+                            <li>Reorganizaciones corporativas con implicaciones fiscales</li>
+                        </ul>
+                        
+                        <p>Ha representado exitosamente a clientes en disputas fiscales ante autoridades nacionales e internacionales, logrando ahorros fiscales significativos mientras garantiza el cumplimiento normativo completo.</p>
+                    `
+                },
+                {
+                    "id": 8,
+                    "nombre": "Gonzalo Hidalgo Ascues",
+                    "titulo": "Socio",
+                    "especialidad": "Especialista en Derecho Tributario y Financiero",
+                    "imagen": "socios/gonzalo-hidalgo.avif",
+                    "experiencia": {
+                        "anios": 16,
+                        "casos": "320+",
+                        "exito": "93%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "@peramas.com",
+                        "telefono": "+1 (555) 123-4570"
+                    },
+                    "descripcionLarga": `
+                        <p>El Dr. Javier López es experto en derecho tributario y financiero con 16 años de experiencia asesorando a corporaciones e individuos de alto patrimonio neto en optimización fiscal y cumplimiento regulatorio.</p>
+                        
+                        <p>Su expertise incluye:</p>
+                        
+                        <ul>
+                            <li>Planificación fiscal internacional</li>
+                            <li>Estructuración de operaciones financieras complejas</li>
+                            <li>Defensa en procedimientos de fiscalización tributaria</li>
+                            <li>Asesoramiento en compliance financiero</li>
+                            <li>Reorganizaciones corporativas con implicaciones fiscales</li>
+                        </ul>
+                        
+                        <p>Ha representado exitosamente a clientes en disputas fiscales ante autoridades nacionales e internacionales, logrando ahorros fiscales significativos mientras garantiza el cumplimiento normativo completo.</p>
+                    `
+                },
+                {
+                    "id": 9,
+                    "nombre": "Graciela Hurtado López",
+                    "titulo": "Socia",
+                    "especialidad": "Especialista en Derecho Tributario y Financiero",
+                    "imagen": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                    "experiencia": {
+                        "anios": 16,
+                        "casos": "320+",
+                        "exito": "93%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "@peramas.com",
+                        "telefono": "+1 (555) 123-4570"
+                    },
+                    "descripcionLarga": `
+                        <p>El Dr. Javier López es experto en derecho tributario y financiero con 16 años de experiencia asesorando a corporaciones e individuos de alto patrimonio neto en optimización fiscal y cumplimiento regulatorio.</p>
+                        
+                        <p>Su expertise incluye:</p>
+                        
+                        <ul>
+                            <li>Planificación fiscal internacional</li>
+                            <li>Estructuración de operaciones financieras complejas</li>
+                            <li>Defensa en procedimientos de fiscalización tributaria</li>
+                            <li>Asesoramiento en compliance financiero</li>
+                            <li>Reorganizaciones corporativas con implicaciones fiscales</li>
+                        </ul>
+                        
+                        <p>Ha representado exitosamente a clientes en disputas fiscales ante autoridades nacionales e internacionales, logrando ahorros fiscales significativos mientras garantiza el cumplimiento normativo completo.</p>
+                    `
+                },
+                {
+                    "id": 10,
+                    "nombre": "Katherine De La Cruz Bellido",
+                    "titulo": "Socia Jr",
+                    "especialidad": "Especialista en Derecho Tributario y Financiero",
+                    "imagen": "socios/katherine-de-la-cruz.avif",
+                    "experiencia": {
+                        "anios": 16,
+                        "casos": "320+",
+                        "exito": "93%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "@peramas.com",
+                        "telefono": "+1 (555) 123-4570"
+                    },
+                    "descripcionLarga": `
+                        <p>El Dr. Javier López es experto en derecho tributario y financiero con 16 años de experiencia asesorando a corporaciones e individuos de alto patrimonio neto en optimización fiscal y cumplimiento regulatorio.</p>
+                        
+                        <p>Su expertise incluye:</p>
+                        
+                        <ul>
+                            <li>Planificación fiscal internacional</li>
+                            <li>Estructuración de operaciones financieras complejas</li>
+                            <li>Defensa en procedimientos de fiscalización tributaria</li>
+                            <li>Asesoramiento en compliance financiero</li>
+                            <li>Reorganizaciones corporativas con implicaciones fiscales</li>
+                        </ul>
+                        
+                        <p>Ha representado exitosamente a clientes en disputas fiscales ante autoridades nacionales e internacionales, logrando ahorros fiscales significativos mientras garantiza el cumplimiento normativo completo.</p>
+                    `
+                },
+                {
+                    "id": 11,
+                    "nombre": "Melanie Espinoza Humala",
+                    "titulo": "Socia Jr",
+                    "especialidad": "Especialista en Derecho Tributario y Financiero",
+                    "imagen": "socios/melanie-espinoza.jpg",
+                    "experiencia": {
+                        "anios": 16,
+                        "casos": "320+",
+                        "exito": "93%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "@peramas.com",
+                        "telefono": "+1 (555) 123-4570"
+                    },
+                    "descripcionLarga": `
+                        <p>El Dr. Javier López es experto en derecho tributario y financiero con 16 años de experiencia asesorando a corporaciones e individuos de alto patrimonio neto en optimización fiscal y cumplimiento regulatorio.</p>
+                        
+                        <p>Su expertise incluye:</p>
+                        
+                        <ul>
+                            <li>Planificación fiscal internacional</li>
+                            <li>Estructuración de operaciones financieras complejas</li>
+                            <li>Defensa en procedimientos de fiscalización tributaria</li>
+                            <li>Asesoramiento en compliance financiero</li>
+                            <li>Reorganizaciones corporativas con implicaciones fiscales</li>
+                        </ul>
+                        
+                        <p>Ha representado exitosamente a clientes en disputas fiscales ante autoridades nacionales e internacionales, logrando ahorros fiscales significativos mientras garantiza el cumplimiento normativo completo.</p>
+                    `
+                },
+                {
+                    "id": 12,
+                    "nombre": "Araceli Vásquez Burgos",
+                    "titulo": "Administradora",
+                    "especialidad": "Especialista en Derecho Tributario y Financiero",
+                    "imagen": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                    "experiencia": {
+                        "anios": 16,
+                        "casos": "320+",
+                        "exito": "93%"
+                    },
+                    "contacto": {
+                        "linkedin": "#",
+                        "email": "@peramas.com",
+                        "telefono": "+1 (555) 123-4570"
+                    },
+                    "descripcionLarga": `
+                        <p>El Dr. Javier López es experto en derecho tributario y financiero con 16 años de experiencia asesorando a corporaciones e individuos de alto patrimonio neto en optimización fiscal y cumplimiento regulatorio.</p>
+                        
+                        <p>Su expertise incluye:</p>
+                        
+                        <ul>
+                            <li>Planificación fiscal internacional</li>
+                            <li>Estructuración de operaciones financieras complejas</li>
+                            <li>Defensa en procedimientos de fiscalización tributaria</li>
+                            <li>Asesoramiento en compliance financiero</li>
+                            <li>Reorganizaciones corporativas con implicaciones fiscales</li>
+                        </ul>
+                        
+                        <p>Ha representado exitosamente a clientes en disputas fiscales ante autoridades nacionales e internacionales, logrando ahorros fiscales significativos mientras garantiza el cumplimiento normativo completo.</p>
+                    `
+                }
+            ]
+        };
+
+        // Función para crear el HTML de un socio
+        function crearSocioCard(socio) {
+            return `
+                <div class="socio-card" data-socio-id="${socio.id}">
+                    <div class="socio-image" style="background-image: url('${socio.imagen}')">
+                        <div class="socio-overlay">
+                            <div class="socio-contact-icons">
+                                <a href="${socio.contacto.linkedin}" class="contact-icon" aria-label="LinkedIn" onclick="event.stopPropagation()">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="mailto:${socio.contacto.email}" class="contact-icon" aria-label="Email" onclick="event.stopPropagation()">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                                <a href="tel:${socio.contacto.telefono}" class="contact-icon" aria-label="Teléfono" onclick="event.stopPropagation()">
+                                    <i class="fas fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socio-content-card">
+                        <h3 class="socio-name">${socio.nombre}</h3>
+                        <div class="socio-title">${socio.titulo}</div>
+                        <p class="socio-specialty">${socio.especialidad}</p>
+                        
+                        <div class="socio-contact-info">
+                            <div class="contact-item">
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:${socio.contacto.email}" class="contact-link">${socio.contacto.email}</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:${socio.contacto.telefono}" class="contact-link">${socio.contacto.telefono}</a>
+                            </div>
+                        </div>
+                        
+                        <div class="socio-experience">
+                            <div class="experience-item">
+                                <span class="experience-number">${socio.experiencia.anios}</span>
+                                <span class="experience-label">Años</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">${socio.experiencia.casos}</span>
+                                <span class="experience-label">Casos</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">${socio.experiencia.exito}</span>
+                                <span class="experience-label">Éxito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Función para crear el modal
+        function crearModal(socio) {
+            return `
+                <div class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="modal-header">
+                    <div class="modal-image" style="background-image: url('${socio.imagen}')"></div>
+                    <div class="modal-info">
+                        <h2 class="modal-name">${socio.nombre}</h2>
+                        <div class="modal-title">${socio.titulo}</div>
+                        <p class="modal-specialty">${socio.especialidad}</p>
+                        
+                        <div class="modal-contact-info">
+                            <div class="modal-contact-item">
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:${socio.contacto.email}" class="contact-link">${socio.contacto.email}</a>
+                            </div>
+                            <div class="modal-contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:${socio.contacto.telefono}" class="contact-link">${socio.contacto.telefono}</a>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-experience">
+                            <div class="experience-item">
+                                <span class="experience-number">${socio.experiencia.anios}</span>
+                                <span class="experience-label">Años</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">${socio.experiencia.casos}</span>
+                                <span class="experience-label">Casos</span>
+                            </div>
+                            <div class="experience-item">
+                                <span class="experience-number">${socio.experiencia.exito}</span>
+                                <span class="experience-label">Éxito</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        ${socio.descripcionLarga}
+                    </div>
+                    <div class="modal-contact-icons">
+                        <a href="${socio.contacto.linkedin}" class="contact-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:${socio.contacto.email}" class="contact-icon" aria-label="Email">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        <a href="tel:${socio.contacto.telefono}" class="contact-icon" aria-label="Teléfono">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Función para abrir el modal
+        function abrirModal(socioId) {
+            const todosSocios = [...sociosData.fundadores, ...sociosData.demasSocios];
+            const socio = todosSocios.find(s => s.id === socioId);
+            
+            if (socio) {
+                const modalContent = document.getElementById('modalContent');
+                modalContent.innerHTML = crearModal(socio);
+                
+                const modal = document.getElementById('socioModal');
+                modal.classList.add('active');
+                
+                // Prevenir scroll del body cuando el modal está abierto
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Función para cerrar el modal
+        function cerrarModal() {
+            const modal = document.getElementById('socioModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Función para renderizar el socio fundador
+        function renderizarSocioFundador() {
+            const fundador = sociosData.fundadores[0];
+            let html = `
+                <div class="socio-content active" id="fundadores">
+                    <div class="socio-fundador-container">
+                        ${crearSocioCard(fundador)}
+                    </div>
+                </div>
+            `;
+            return html;
+        }
+
+        // Función para renderizar los demás socios
+        function renderizarDemasSocios() {
+            const socios = sociosData.demasSocios;
+            let html = `
+                <div class="socio-content" id="demas-socios">
+                    <div class="socios-grid">
+            `;
+            
+            socios.forEach(socio => {
+                html += crearSocioCard(socio);
+            });
+            
+            html += `
+                    </div>
+                </div>
+            `;
+            return html;
+        }
+
+        // Función para inicializar la sección
+        function inicializarSeccionSocios() {
+            const container = document.getElementById('socios-content');
+            container.innerHTML = renderizarSocioFundador() + renderizarDemasSocios();
+            
+            // Agregar event listeners para las pestañas
+            const socioTabs = document.querySelectorAll('.socio-tab');
+            const socioContents = document.querySelectorAll('.socio-content');
+            
+            function switchTab(tabId) {
+                socioTabs.forEach(tab => tab.classList.remove('active'));
+                socioContents.forEach(content => content.classList.remove('active'));
+                
+                document.querySelector(`.socio-tab[data-tab="${tabId}"]`).classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            }
+            
+            socioTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    switchTab(tabId);
+                });
+            });
+            
+            // Event listeners para las tarjetas de socios
+            const socioCards = document.querySelectorAll('.socio-card');
+            socioCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+                
+                // Click para abrir modal
+                card.addEventListener('click', function() {
+                    const socioId = parseInt(this.getAttribute('data-socio-id'));
+                    abrirModal(socioId);
+                });
+            });
+            
+            // Event listener para cerrar modal
+            document.addEventListener('click', function(event) {
+                if (event.target.id === 'socioModal' || event.target.id === 'modalClose' || event.target.closest('#modalClose')) {
+                    cerrarModal();
+                }
+            });
+            
+            // Cerrar modal con ESC
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    cerrarModal();
+                }
+            });
+        }
+
+        // Inicializar cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', inicializarSeccionSocios);
+    </script>
+</body>
+</html>
