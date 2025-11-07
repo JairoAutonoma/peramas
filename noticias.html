@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros - Peramas Asesores</title>
+    <title>Directorio - Peramás Asesores</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="noticias.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="nosotros.css">
 </head>
 <body>
-
     <!-- Header -->
     <header id="header" class="absolute top-0 left-0 w-full z-50 py-4">
         <div class="container mx-auto px-4 lg:px-8">
@@ -157,84 +156,25 @@
         </div>
     </section>
 
-    <!-- Navegación de pestañas -->
-    <div class="nosotros-tabs">
-        <div class="tab-item active" data-tab="quienes-somos">Quiénes Somos</div>
-        <!--<div class="tab-item" data-tab="compromiso-pais">Nuestro Compromiso con el País</div>-->
-    </div>
-
-    <!-- Contenido de las pestañas -->
-    <div class="tab-content active" id="quienes-somos">
-        <section class="quienes-somos">
+    <!-- Sección Noticias -->
+    <section class="noticias" id="noticias">
         <div class="container">
-            <div class="section-header">
-                    <h2 class="section-title">Nosotros</h2>
-                    <div class="section-subtitle">
-                        <p>Peramás Asesores S.A. es una firma legal que ofrece asesoría jurídica integral y personalizada a clientes tanto nacionales como extranjeros, sean personas naturales o jurídicas.
-Nuestro equipo está conformado por profesionales con amplia trayectoria y experiencia en diversas áreas del derecho.</p>
-                    </div>
+            <h2 class="section-title">Últimas Noticias</h2>
+            <p class="section-subtitle">Mantente informado sobre las últimas novedades legales, casos de éxito y actualizaciones de nuestro bufete.</p>
+            
+            <div id="noticias-container" class="noticias-grid">
+                <!-- Las noticias se cargarán aquí dinámicamente -->
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Cargando noticias...</p>
                 </div>
-            <div class="mision-vision">
-                <div class="mision">
-                    <h3>Misión</h3>
-                    <p>Brindar asesoría jurídica integral, estratégica y personalizada a personas naturales y jurídicas, tanto nacionales como internacionales, a través de un equipo multidisciplinario de profesionales con amplia experiencia. Nos comprometemos a proteger los intereses de nuestros clientes, anticipar riesgos legales y generar soluciones que aporten valor real a sus actividades y negocios.</p>
-                </div>
-                
-                <div class="image-logo-mid">
-                    <div class="image">
-                        <figure>
-                            <img src="peramas-removebg-preview.png" alt="Logo Bufete Legal" onerror="this.style.display='none'">
-                        </figure>
-                    </div>
-                </div>
-                
-                <div class="vision">
-                    <h3>Visión</h3>
-                    <p>Ser reconocidos como el estudio jurídico líder en asesoría legal integral en el país y la región, destacado por su excelencia profesional, enfoque preventivo y capacidad para acompañar a las empresas en un entorno legal dinámico, asegurando su crecimiento sostenible y cumplimiento normativo en todas las áreas del derecho.</p>
-                </div>
+            </div>
+            
+            <div class="noticias-btn">
+                <a><button class="btn-noticias" id="btn-ver-mas">Ver Más Noticias</button></a>
             </div>
         </div>
     </section>
-    </div>
-
-    <!--<div class="tab-content" id="compromiso-pais">
-        <section class="compromiso-pais">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Nuestro Compromiso con el País</h2>
-                    <div class="section-subtitle">
-                        <p>Como firma legal líder, estamos comprometidos con el desarrollo y progreso de nuestro país, contribuyendo activamente en diversos ámbitos de la sociedad.</p>
-                    </div>
-                </div>
-
-                <div class="compromiso-grid">
-                    <div class="compromiso-item">
-                        <div class="compromiso-icon">
-                            <i class="fas fa-hands-helping"></i>
-                        </div>
-                        <h3>Trabajo Pro Bono</h3>
-                        <p>Brindamos asesoría legal gratuita a organizaciones sin fines de lucro y personas de escasos recursos, contribuyendo al acceso a la justicia.</p>
-                    </div>
-                    
-                    <div class="compromiso-item">
-                        <div class="compromiso-icon">
-                            <i class="fas fa-seedling"></i>
-                        </div>
-                        <h3>Sostenibilidad</h3>
-                        <p>Implementamos prácticas sostenibles en nuestras operaciones y promovemos la responsabilidad ambiental entre nuestros clientes y colaboradores.</p>
-                    </div>
-                    
-                    <div class="compromiso-item">
-                        <div class="compromiso-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>Educación Legal</h3>
-                        <p>Participamos activamente en programas de capacitación y formación de nuevos talentos en el ámbito legal, contribuyendo al desarrollo profesional.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>-->
 
     <!-- Footer -->
     <footer class="footer" id="footer">
@@ -329,43 +269,6 @@ Nuestro equipo está conformado por profesionales con amplia trayectoria y exper
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabItems = document.querySelectorAll('.tab-item');
-            const tabContents = document.querySelectorAll('.tab-content');
-            
-            // Función para cambiar pestaña
-            function switchTab(tabId) {
-                // Remover clase active de todas las pestañas y contenidos
-                tabItems.forEach(item => item.classList.remove('active'));
-                tabContents.forEach(content => content.classList.remove('active'));
-                
-                // Activar pestaña y contenido seleccionados
-                document.querySelector(`.tab-item[data-tab="${tabId}"]`).classList.add('active');
-                document.getElementById(tabId).classList.add('active');
-            }
-            
-            // Event listeners para las pestañas
-            tabItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    const tabId = this.getAttribute('data-tab');
-                    switchTab(tabId);
-                });
-            });
-            
-            // Efectos hover para los elementos de compromiso
-            const compromisoItems = document.querySelectorAll('.compromiso-item');
-            
-            compromisoItems.forEach(item => {
-                item.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                });
-                
-                item.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
-            });
-        });
-    
         // Mobile Menu Functionality
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const closeMobileMenu = document.getElementById('close-mobile-menu');
@@ -407,7 +310,160 @@ Nuestro equipo está conformado por profesionales con amplia trayectoria y exper
                 hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
             });
         });
-    
+        
+        // JSON con los datos de las noticias (base de 6 noticias)
+        const noticiasData = {
+            "noticias": [
+                {
+                    "id": 1,
+                    "titulo": "Nuevas Reformas Legales en Derecho Corporativo para 2024",
+                    "excerpt": "Analizamos las implicaciones de las recientes reformas legales para las empresas y cómo adaptarse a los nuevos requerimientos regulatorios.",
+                    "imagen": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                    "fecha": "15 de Octubre, 2025",
+                    "categoria": "Derecho Corporativo",
+                    "badge": "Novedad",
+                    "enlace": "#"
+                },
+                {
+                    "id": 2,
+                    "titulo": "Bufete Legal Gana Premio a la Excelencia Jurídica 2023",
+                    "excerpt": "Reconocidos por nuestro compromiso con la calidad y la innovación en servicios legales. Un logro que refleja nuestra dedicación.",
+                    "imagen": "https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                    "fecha": "8 de Octubre, 2025",
+                    "categoria": "Premios",
+                    "badge": "Reconocimiento",
+                    "enlace": "#"
+                },
+                {
+                    "id": 3,
+                    "titulo": "Webinar Gratuito: Protección de Datos en la Era Digital",
+                    "excerpt": "Nuestros expertos analizan las mejores prácticas para cumplir con las normativas de protección de datos y evitar sanciones.",
+                    "imagen": "https://cdn.pixabay.com/photo/2024/04/06/17/41/ai-generated-8679714_1280.jpg",
+                    "fecha": "1 de Octubre, 2025",
+                    "categoria": "Webinar",
+                    "badge": "Evento",
+                    "enlace": "#"
+                },
+                {
+                    "id": 4,
+                    "titulo": "Guía Completa sobre Propiedad Intelectual para Startups",
+                    "excerpt": "Te explicamos cómo proteger tus activos intelectuales desde el inicio de tu emprendimiento para evitar problemas futuros.",
+                    "imagen": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                    "fecha": "25 de Septiembre, 2025",
+                    "categoria": "Propiedad Intelectual",
+                    "badge": "Guía",
+                    "enlace": "#"
+                },
+                {
+                    "id": 5,
+                    "titulo": "Actualización en Legislación Laboral Post-Pandemia",
+                    "excerpt": "Resumen de los cambios más importantes en las leyes laborales que afectan a empresas y trabajadores en el contexto actual.",
+                    "imagen": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                    "fecha": "18 de Septiembre, 2025",
+                    "categoria": "Derecho Laboral",
+                    "badge": "Actualización",
+                    "enlace": "#"
+                },
+                {
+                    "id": 6,
+                    "titulo": "Nuevos Socios Se Unen al Bufete",
+                    "excerpt": "Damos la bienvenida a tres nuevos socios especializados en derecho internacional, fiscal y ambiental.",
+                    "imagen": "https://images.unsplash.com/photo-1568992688065-536aad8a12f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                    "fecha": "10 de Septiembre, 2025",
+                    "categoria": "Novedades",
+                    "badge": "Equipo",
+                    "enlace": "#"
+                }
+            ]
+        };
+
+        // Variables globales para controlar la paginación
+        let noticiasMostradas = 0;
+        const noticiasPorCarga = 4;
+
+        // Función para cargar las noticias iniciales
+        function cargarNoticiasIniciales() {
+            const container = document.getElementById('noticias-container');
+            
+            // Simular un pequeño retraso
+            setTimeout(() => {
+                container.innerHTML = '';
+                
+                // Mostrar las primeras 3 noticias
+                mostrarSiguientesNoticias();
+                
+                // Actualizar estado del botón
+                actualizarBotonVerMas();
+            }, 800);
+        }
+
+        // Función para mostrar las siguientes noticias
+        function mostrarSiguientesNoticias() {
+            const container = document.getElementById('noticias-container');
+            
+            // Calcular cuántas noticias mostrar
+            const inicio = noticiasMostradas;
+            const fin = Math.min(noticiasMostradas + noticiasPorCarga, noticiasData.noticias.length);
+            
+            // Crear y agregar las noticias
+            for (let i = inicio; i < fin; i++) {
+                const noticia = noticiasData.noticias[i];
+                const noticiaCard = document.createElement('div');
+                noticiaCard.className = 'noticia-card';
+                
+                noticiaCard.innerHTML = `
+                    <div class="noticia-image" style="background-image: url('${noticia.imagen}')">
+                        <div class="noticia-badge">${noticia.badge}</div>
+                    </div>
+                    <div class="noticia-content">
+                        <div class="noticia-meta">
+                            <div class="noticia-date">
+                                <i class="far fa-calendar"></i>
+                                <span>${noticia.fecha}</span>
+                            </div>
+                            <div class="noticia-category">
+                                <i class="far fa-folder"></i>
+                                <span>${noticia.categoria}</span>
+                            </div>
+                        </div>
+                        <h3>${noticia.titulo}</h3>
+                        <p class="noticia-excerpt">${noticia.excerpt}</p>
+                        <a href="${noticia.enlace}" class="noticia-link">
+                            Leer más <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                `;
+                
+                container.appendChild(noticiaCard);
+            }
+            
+            // Actualizar contador
+            noticiasMostradas = fin;
+        }
+
+        // Función para actualizar el estado del botón "Ver más"
+        function actualizarBotonVerMas() {
+            const btnVerMas = document.getElementById('btn-ver-mas');
+            
+            if (noticiasMostradas >= noticiasData.noticias.length) {
+                btnVerMas.disabled = true;
+                btnVerMas.textContent = 'Todas las noticias cargadas';
+            } else {
+                btnVerMas.disabled = false;
+                btnVerMas.textContent = `Ver Más Noticias (${noticiasData.noticias.length - noticiasMostradas} restantes)`;
+            }
+        }
+
+        // Cargar las noticias cuando la página esté lista
+        document.addEventListener('DOMContentLoaded', () => {
+            cargarNoticiasIniciales();
+            
+            // Agregar evento al botón "Ver más"
+            document.getElementById('btn-ver-mas').addEventListener('click', () => {
+                mostrarSiguientesNoticias();
+                actualizarBotonVerMas();
+            });
+        });
     </script>
 </body>
 </html>

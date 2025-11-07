@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros - Peramas Asesores</title>
+    <title>Directorio - Peramás Asesores</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="areas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="nosotros.css">
 </head>
 <body>
-
     <!-- Header -->
     <header id="header" class="absolute top-0 left-0 w-full z-50 py-4">
         <div class="container mx-auto px-4 lg:px-8">
@@ -157,84 +156,266 @@
         </div>
     </section>
 
-    <!-- Navegación de pestañas -->
-    <div class="nosotros-tabs">
-        <div class="tab-item active" data-tab="quienes-somos">Quiénes Somos</div>
-        <!--<div class="tab-item" data-tab="compromiso-pais">Nuestro Compromiso con el País</div>-->
-    </div>
-
-    <!-- Contenido de las pestañas -->
-    <div class="tab-content active" id="quienes-somos">
-        <section class="quienes-somos">
+    <!-- Sección Áreas de Práctica -->
+    <section class="areas" id="areas">
         <div class="container">
-            <div class="section-header">
-                    <h2 class="section-title">Nosotros</h2>
-                    <div class="section-subtitle">
-                        <p>Peramás Asesores S.A. es una firma legal que ofrece asesoría jurídica integral y personalizada a clientes tanto nacionales como extranjeros, sean personas naturales o jurídicas.
-Nuestro equipo está conformado por profesionales con amplia trayectoria y experiencia en diversas áreas del derecho.</p>
+            <h2 class="section-title">Nuestras Áreas de Práctica</h2>
+            <p class="section-subtitle">Ofrecemos servicios legales especializados en todas las áreas del derecho, brindando soluciones integrales y personalizadas.</p>
+            
+            <div class="areas-grid">
+                <!-- Card 1 -->
+                 <div class="area-card" data-url="derecho-comercial.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Derecho Comercial y Gobierno Corporativo</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Asesoría en constitución de empresas, fusiones, adquisiciones y gobierno corporativo.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
                     </div>
                 </div>
-            <div class="mision-vision">
-                <div class="mision">
-                    <h3>Misión</h3>
-                    <p>Brindar asesoría jurídica integral, estratégica y personalizada a personas naturales y jurídicas, tanto nacionales como internacionales, a través de un equipo multidisciplinario de profesionales con amplia experiencia. Nos comprometemos a proteger los intereses de nuestros clientes, anticipar riesgos legales y generar soluciones que aporten valor real a sus actividades y negocios.</p>
-                </div>
                 
-                <div class="image-logo-mid">
-                    <div class="image">
-                        <figure>
-                            <img src="peramas-removebg-preview.png" alt="Logo Bufete Legal" onerror="this.style.display='none'">
-                        </figure>
+                <!-- Card 2 -->
+                 <div class="area-card" data-url="derecho-laboral.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>Derecho Laboral</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Contratos de trabajo, despidos, negociación colectiva y seguridad social.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="vision">
-                    <h3>Visión</h3>
-                    <p>Ser reconocidos como el estudio jurídico líder en asesoría legal integral en el país y la región, destacado por su excelencia profesional, enfoque preventivo y capacidad para acompañar a las empresas en un entorno legal dinámico, asegurando su crecimiento sostenible y cumplimiento normativo en todas las áreas del derecho.</p>
+
+                <!-- Card 3 -->
+                <div class="area-card" data-url="contrataciones-estado.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Contrataciones con el Estado</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Asesoría en licitaciones públicas, contratos administrativos y procedimientos de selección.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
                 </div>
+            
+
+                <!-- Card 4 -->
+                 <div class="area-card" data-url="derecho-empresarial.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Derecho Empresarial y Arbitrajes</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Resolución alternativa de conflictos y asesoría legal empresarial integral.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                 <div class="area-card" data-url="procesos-penales.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Procesos Judiciales Penales</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Defensa en procesos penales, asesoría a víctimas y garantías procesales.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Card 6 -->
+                 <div class="area-card" data-url="propiedad-intelectual.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Propiedad Intelectual</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Protección de marcas, patentes, derechos de autor y secretos comerciales.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Card 7 -->
+                <div class="area-card" data-url="inmobiliario-urbanismo.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <h3>Inmobiliario y Urbanismo</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Asesoría legal en transacciones inmobiliarias, planificación urbana y derecho de propiedad.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="area-card" data-url="proceso-civil.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-balance-scale-right"></i>
+                        </div>
+                        <h3>Proceso Judicial Civil</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Litigios civiles, reclamaciones de daños y perjuicios y derecho de obligaciones.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Card 9 -->
+                <div class="area-card" data-url="derecho-constitucional.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Derecho Constitucional</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Protección de derechos fundamentales, control de constitucionalidad y defensa de garantías constitucionales.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Card 10 -->
+                <div class="area-card" data-url="proceso-comercial.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Proceso Judicial Comercial</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Litigios mercantiles, quiebras y concursos de acreedores.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Card 11 -->
+                <div class="area-card" data-url="procesos-judiciales.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Procesos Judiciales</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Representación legal especializada en todas las instancias judiciales y procedimientos legales.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Card 12 -->
+                <div class="area-card" data-url="negociacion-internacional.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Facilitador de Negociación Internacional</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Mediación en negociaciones internacionales y servicios de traducción legal.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Card 13 -->
+                <div class="area-card" data-url="proceso-administrativo.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3>Proceso Judicial Contencioso Administrativo</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Impugnación de actos administrativos y defensa frente a la administración pública.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 14 -->
+                <div class="area-card" data-url="gestion-publica.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Gestión Pública</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Asesoramiento a entidades públicas y privadas en relación con la administración estatal.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 15 -->
+                <div class="area-card" data-url="derecho-internacional.html">
+                    <div class="card-content">
+                        <div class="area-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Derecho Internacional</h3>
+                        <div class="description-container">
+                            <div class="description">
+                                <p>Tratados internacionales, derecho consular y relaciones internacionales entre Estados.</p>
+                            </div>
+                            <a href="#" class="area-link">Ver más <span>&rarr;</span></a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
-    </div>
-
-    <!--<div class="tab-content" id="compromiso-pais">
-        <section class="compromiso-pais">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Nuestro Compromiso con el País</h2>
-                    <div class="section-subtitle">
-                        <p>Como firma legal líder, estamos comprometidos con el desarrollo y progreso de nuestro país, contribuyendo activamente en diversos ámbitos de la sociedad.</p>
-                    </div>
-                </div>
-
-                <div class="compromiso-grid">
-                    <div class="compromiso-item">
-                        <div class="compromiso-icon">
-                            <i class="fas fa-hands-helping"></i>
-                        </div>
-                        <h3>Trabajo Pro Bono</h3>
-                        <p>Brindamos asesoría legal gratuita a organizaciones sin fines de lucro y personas de escasos recursos, contribuyendo al acceso a la justicia.</p>
-                    </div>
-                    
-                    <div class="compromiso-item">
-                        <div class="compromiso-icon">
-                            <i class="fas fa-seedling"></i>
-                        </div>
-                        <h3>Sostenibilidad</h3>
-                        <p>Implementamos prácticas sostenibles en nuestras operaciones y promovemos la responsabilidad ambiental entre nuestros clientes y colaboradores.</p>
-                    </div>
-                    
-                    <div class="compromiso-item">
-                        <div class="compromiso-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>Educación Legal</h3>
-                        <p>Participamos activamente en programas de capacitación y formación de nuevos talentos en el ámbito legal, contribuyendo al desarrollo profesional.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>-->
 
     <!-- Footer -->
     <footer class="footer" id="footer">
@@ -329,43 +510,6 @@ Nuestro equipo está conformado por profesionales con amplia trayectoria y exper
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const tabItems = document.querySelectorAll('.tab-item');
-            const tabContents = document.querySelectorAll('.tab-content');
-            
-            // Función para cambiar pestaña
-            function switchTab(tabId) {
-                // Remover clase active de todas las pestañas y contenidos
-                tabItems.forEach(item => item.classList.remove('active'));
-                tabContents.forEach(content => content.classList.remove('active'));
-                
-                // Activar pestaña y contenido seleccionados
-                document.querySelector(`.tab-item[data-tab="${tabId}"]`).classList.add('active');
-                document.getElementById(tabId).classList.add('active');
-            }
-            
-            // Event listeners para las pestañas
-            tabItems.forEach(item => {
-                item.addEventListener('click', function() {
-                    const tabId = this.getAttribute('data-tab');
-                    switchTab(tabId);
-                });
-            });
-            
-            // Efectos hover para los elementos de compromiso
-            const compromisoItems = document.querySelectorAll('.compromiso-item');
-            
-            compromisoItems.forEach(item => {
-                item.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                });
-                
-                item.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
-            });
-        });
-    
         // Mobile Menu Functionality
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const closeMobileMenu = document.getElementById('close-mobile-menu');
@@ -407,7 +551,6 @@ Nuestro equipo está conformado por profesionales con amplia trayectoria y exper
                 hamburgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
             });
         });
-    
     </script>
 </body>
 </html>
